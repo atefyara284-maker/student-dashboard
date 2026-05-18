@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Student Dashboard</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Chart.js -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<style>
+
+
+
+</style>
+</head>
+
+<body>
+
+<div class="bg-circle"></div>
+
+<!-- SIDEBAR -->
+
+<div class="sidebar">
+
+    <div class="logo">
+        <h2>Student 💜</h2>
+    </div>
+
+    <!-- STUDY ICONS -->
+
+    <div class="study-icons">
+
+        <img src="https://cdn-icons-png.flaticon.com/512/2436/2436874.png">
+
+        <img src="https://cdn-icons-png.flaticon.com/512/2936/2936886.png">
+
+        <img src="https://cdn-icons-png.flaticon.com/512/2997/2997301.png">
+
+    </div>
+
+    <!-- MENU -->
+
+    <ul>
+        <li>🏠 Dashboard</li>
+        <li>📚 Courses</li>
+        <li>📅 Schedule</li>
+        <li>📝 Notes</li>
+        <li>✅ To Do List</li>
+    </ul>
+
+</div>
+
+<!-- MAIN -->
+
+<div class="main">
+
+<header>
+
+    <h1>Student Dashboard</h1>
+
+    <div class="clock" id="clock"></div>
+
+</header>
+
+<!-- CARDS -->
+
+<div class="grid">
+
+    <div class="card">
+        <h3>GPA</h3>
+        <p>3.8</p>
+    </div>
+
+    <div class="card">
+        <h3>Attendance</h3>
+        <p>92%</p>
+    </div>
+
+    <div class="card">
+        <h3>Tasks</h3>
+        <p id="taskCount">0</p>
+    </div>
+
+    <div class="card">
+        <h3>Exams</h3>
+        <p>2</p>
+    </div>
+
+</div>
+
+<!-- COURSES -->
+
+<div class="section">
+
+    <h3>Courses 📚</h3>
+
+    <div class="course">Anatomy</div>
+    <div class="course">Physiology</div>
+    <div class="course">Kinesiology</div>
+    <div class="course">Web Development</div>
+
+</div>
+
+<!-- SCHEDULE -->
+
+<div class="section">
+
+    <h3>Schedule 📅</h3>
+
+    <table>
+
+        <tr>
+            <th>Subject</th>
+            <th>Time</th>
+        </tr>
+
+        <tr>
+            <td>Anatomy</td>
+            <td>10:00 AM</td>
+        </tr>
+
+        <tr>
+            <td>Kinesiology</td>
+            <td>1:00 PM</td>
+        </tr>
+
+        <tr>
+            <td>Web Development</td>
+            <td>3:00 PM</td>
+        </tr>
+
+    </table>
+
+</div>
+
+<!-- NOTES -->
+
+<div class="section">
+
+    <h3>Notes 📝</h3>
+
+    <textarea id="notes" placeholder="Write your notes here..."></textarea>
+
+</div>
+
+<!-- TODO -->
+
+<div class="section">
+
+    <h3>To Do List ✅</h3>
+
+    <div class="todo-input">
+
+        <input type="text" id="taskInput" placeholder="Add new task">
+
+        <button onclick="addTask()">Add</button>
+
+    </div>
+
+    <ul id="taskList"></ul>
+
+</div>
+
+<!-- CHART -->
+
+<div class="chart-section">
+
+    <h3>Study Progress 📊</h3>
+
+    <canvas id="chart"></canvas>
+
+</div>
+
+</div>
+
+<script>
+
+
+
+</script>
+
+</body>
+</html>
